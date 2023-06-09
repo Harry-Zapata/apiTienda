@@ -5,7 +5,7 @@ var bodyparser = require('body-parser');
 var mongoose = require('mongoose');
 var port = process.env.PORT || 4201;
 var app = express();
-const uri = "mongodb://harryzapatasoto:Harry211201@ac-mbdbtfq-shard-00-00.cjjjsmk.mongodb.net:27017,ac-mbdbtfq-shard-00-01.cjjjsmk.mongodb.net:27017,ac-mbdbtfq-shard-00-02.cjjjsmk.mongodb.net:27017/tienda?ssl=true&replicaSet=atlas-8c70gj-shard-0&authSource=admin"
+const uri = "mongodb://admin:H123456789@ac-mbdbtfq-shard-00-00.cjjjsmk.mongodb.net:27017,ac-mbdbtfq-shard-00-01.cjjjsmk.mongodb.net:27017,ac-mbdbtfq-shard-00-02.cjjjsmk.mongodb.net:27017/tienda?ssl=true&replicaSet=atlas-8c70gj-shard-0&authSource=admin"
 
 var server = require('http').createServer(app);
 var io = require('socket.io')(server,{
